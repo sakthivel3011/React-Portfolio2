@@ -243,7 +243,7 @@ section {
     right: 0;
     width: 70vw;
     max-width: 320px;
-    height: calc(70vh - 350px);
+    height: calc(90vh - 350px);
     background: var(--primary-color);
     flex-direction: column;
     align-items: flex-start;
