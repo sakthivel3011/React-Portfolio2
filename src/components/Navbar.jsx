@@ -21,6 +21,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', to: 'hero' },
     { name: 'About', to: 'about' },
+    { name: 'Skills', to: 'skills' },
     { name: 'Projects', to: 'projects' },
     { name: 'Resume', to: 'resume' },
     { name: 'Contact', to: 'contact' },
@@ -29,7 +30,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <a href="/" className="logo">Sakthivel</a>
+        <a href="/" className="logo">Sakthivel S</a>
         
         <div 
           className={`hamburger ${mobileMenuOpen ? 'open' : ''}`}
@@ -47,7 +48,7 @@ const Navbar = () => {
                 to={link.to}
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={100}
                 offset={-80}
                 className="nav-link"
                 onClick={() => setMobileMenuOpen(false)}
