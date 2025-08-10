@@ -2,8 +2,6 @@ import { useEffect } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import sakthiImg from '../assets/sakthi.jpg';
 
-
-
 const Hero = () => {
   useEffect(() => {
     const particles = () => {
@@ -64,6 +62,10 @@ const Hero = () => {
             <img src={sakthiImg} alt="Profile" />
           </div>
         </div>
+      </div>
+      {/* Add this down arrow div */}
+      <div className="down-arrow">
+        <span>&#9660;</span>
       </div>
     </section>
   )

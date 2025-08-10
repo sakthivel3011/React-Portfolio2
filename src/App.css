@@ -403,7 +403,68 @@ section {
   object-fit: cover;
   display: block;
 }
+/* Down arrow styles */
+.down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
 
+.down-arrow span {
+  display: inline-block;
+  color: var(--text-light);
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.down-arrow span:hover {
+  color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-20px);
+    opacity: 0.7;
+  }
+  60% {
+    transform: translateY(-10px);
+    opacity: 0.9;
+  }
+}
+
+/* Responsive Down Arrow Size */
+.down-arrow span {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .down-arrow span {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .down-arrow span {
+    font-size: 1.2rem;
+  }
+}
+
+/* Make sure hero section has relative positioning */
+.hero {
+  position: relative;
+  /* Your existing hero styles */
+}
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .hero .container {
