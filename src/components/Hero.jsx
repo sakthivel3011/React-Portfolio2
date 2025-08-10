@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { TypeAnimation } from 'react-type-animation'
-import sakthiImg from '../assets/sakthi.jpg';
+import sakthi1Img from '../assets/sakthi1.jpg';
 
 const Hero = () => {
   useEffect(() => {
@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
         <div className="hero-image fade-in delay-1">
           <div className="image-wrapper">
-            <img src={sakthiImg} alt="Profile" />
+            <img src={sakthi1Img} alt="Profile" />
           </div>
         </div>
       </div>
