@@ -60,7 +60,7 @@ const Projects = () => {
       id: 6,
       title: 'SMARTSEND',
       description: 'AI-powered email delivery system with smart personalization and optimized send times.',
-      tags: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+      tags: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB' ,'firebase'],
       image: sakthi6Img,
       link: '#',
       github: '#'
