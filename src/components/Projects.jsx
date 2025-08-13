@@ -17,8 +17,8 @@ const Projects = () => {
       description: 'Full-featured online store with product catalog, shopping cart, and secure checkout system.',
       tags: ['Html', 'css', 'JavaScript', 'Bootstrap' , 'Node.js', 'MongoDB'],
       image: sakthiImg,
-      link: 'https://sakthivel3011.github.io/LIVE-DEMO-SRI-ANNAKAMATCHI-TRADES/',
-      github: 'https://github.com/sakthivel3011/Full-functionality-Sri-Annakamatchi-Traders'
+      link: 'https://rice-web-html.vercel.app/',
+      github: 'https://github.com/sakthivel3011/RICE-WEBSITE-HTML'
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const Projects = () => {
       tags: ['Html', 'css', 'JavaScript', 'Bootstrap'],
       image: sakthi2Img,
       link: 'https://eecc.kongu.edu/',
-      github: 'https://github.com/sakthivel3011/EEC/tree/main/public'
+      github: 'https://github.com/sakthivel3011/EEC-CLUB'
     },
     {
       id: 3,
@@ -35,8 +35,8 @@ const Projects = () => {
       description: 'Built a responsive e-commerce website with secure checkout and easy navigation.Focused on a smooth.',
       tags: ['Html', 'css', 'JavaScript', 'Bootstrap', 'Node.js', 'MongoDB'],
       image: sakthi3Img,
-      link: '#',
-      github: 'https://github.com/sakthivel3011/E-COMMERCE-FOR-RICE'
+      link: 'https://adv-rice-live.vercel.app/',
+      github: 'https://github.com/sakthivel3011/ADV-RICE-LIVE'
     },
     {
       id: 4,
@@ -44,8 +44,8 @@ const Projects = () => {
       description: 'Created a basic personal portfolio with backend integration and contact form mail functionality.',
       tags: [ 'Html', 'css', 'JavaScript', 'Bootstrap', 'Appscript','Firebase'],
       image: sakthi4Img,
-      link: 'https://sakthis30.web.app/',
-      github: 'https://github.com/sakthivel3011/PORTFOLIO'
+      link: 'https://sakthi-html.vercel.app/',
+      github: 'https://github.com/sakthivel3011/HTML-PORTFOLIO'
     },
     {
       id: 5,

@@ -579,6 +579,7 @@ section {
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .section-title {
@@ -586,19 +587,57 @@ section {
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: var(--text-color);
+  word-break: break-word;
+  text-align: center;
+  width: 100%;
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, var(--accent-color));
+  background: var(--highlight-color);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
 }
 
 .section-subtitle {
   color: var(--secondary-color);
   padding-top: 15px;
   font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive: center and adjust font size for small devices */
+@media (max-width: 768px) {
+  .section-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 /* About Content */
@@ -628,7 +667,7 @@ section {
 }
 
 .role {
-  color: var(--secondary-color);
+  color: var(--accent-color);
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
@@ -637,7 +676,7 @@ section {
 
 .description {
   line-height: 1.7;
-  color: var(--error-color);
+  color: var(--dark-color);
   word-break: break-word;
 }
 
@@ -831,11 +870,17 @@ section {
 .skills-section {
   padding: 5rem 1rem;
   background-color: var(--bg-color);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .section-title {
@@ -843,18 +888,55 @@ section {
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: var(--text-color);
+  word-break: break-word;
+  text-align: center;
+  width: 100%;
 }
 
 .gradient-text {
-  background: linear-gradient(90deg,var(--accent-color));
+  background: linear-gradient(90deg, var(--accent-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-align: center;
+  width: 100%;
 }
 
 .section-subtitle {
   color: var(--secondary-color);
   font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 3rem 0.5rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 2rem 0.2rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .section-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 /* Skills Grid */
