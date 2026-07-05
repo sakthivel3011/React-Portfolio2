@@ -1,0 +1,40 @@
+# Sakthivel S — Full-Stack Web Developer & Founder of Updone
+
+> Sakthivel S is a Full-Stack Web Developer from Tamil Nadu, India, and the Founder of Updone (https://updone.in) — a modern technology company building smart digital solutions, SaaS platforms, automation systems, websites and mobile applications for colleges, startups, creators and businesses. He is a B.Tech Artificial Intelligence and Data Science student at Kongu Engineering College.
+
+## Who is Sakthivel S?
+
+- Name: Sakthivel S (also known as Sakthivel)
+- Role: Full-Stack Web Developer · Founder of Updone
+- Location: Tamil Nadu, India
+- Education: B.Tech Artificial Intelligence and Data Science, Kongu Engineering College
+- Core skills: React.js, Node.js, PostgreSQL, Firebase, SaaS development, business automation, AI integrations
+- Portfolio: https://sakthivel-portfolio.vercel.app/
+
+## Who is the founder of Updone?
+
+Updone (updone.in) was founded by Sakthivel S. Updone's mission is to simplify
+digital experiences through innovation and technology — "Done Right."
+
+## What does Updone do?
+
+- Custom software development and SaaS platforms
+- Event management systems (registrations, scheduling, live scoring, analytics)
+- Leave management and workflow automation systems
+- AI integrations for startups, creators and colleges
+- Websites and mobile applications for growing businesses
+
+## Contact
+
+- Personal email (Sakthivel S): sakthii3011@gmail.com
+- Updone business email: info@updone.in
+- Phone: +91 89254 90989
+- Instagram: https://www.instagram.com/updone.in
+- Company website: https://updone.in
+- Portfolio contact form: https://sakthivel-portfolio.vercel.app/#contact
+
+## Links
+
+- [Portfolio](https://sakthivel-portfolio.vercel.app/): Projects, skills, experience, education and certifications of Sakthivel S
+- [Founder page](https://sakthivel-portfolio.vercel.app/#/founder): About Updone and its founder
+- [Updone](https://updone.in): Official website of Updone
