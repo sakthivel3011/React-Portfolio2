@@ -106,13 +106,7 @@ export default function Contact() {
               </Reveal>
             ))}
 
-            <Reveal delay={0.25}>
-              <div className="glass rounded-2xl p-5 text-sm leading-relaxed text-white/50">
-                Every message is saved and lands directly in my inbox — you'll also get an
-                instant thank-you mail. I usually reply within{' '}
-                <span className="font-semibold text-accent">24 hours</span>.
-              </div>
-            </Reveal>
+            
           </div>
 
           {/* Form */}
