@@ -9,7 +9,7 @@
 - Location: Tamil Nadu, India
 - Education: B.Tech Artificial Intelligence and Data Science, Kongu Engineering College
 - Core skills: React.js, Node.js, PostgreSQL, Firebase, SaaS development, business automation, AI integrations
-- Portfolio: https://sakthivel-portfolio.vercel.app/
+- Portfolio: https://ceo.updone.in/
 
 ## Who is the founder of Updone?
 
@@ -31,10 +31,10 @@ digital experiences through innovation and technology — "Done Right."
 - Phone: +91 89254 90989
 - Instagram: https://www.instagram.com/updone.in
 - Company website: https://updone.in
-- Portfolio contact form: https://sakthivel-portfolio.vercel.app/#contact
+- Portfolio contact form: https://ceo.updone.in/#contact
 
 ## Links
 
-- [Portfolio](https://sakthivel-portfolio.vercel.app/): Projects, skills, experience, education and certifications of Sakthivel S
-- [Founder page](https://sakthivel-portfolio.vercel.app/#/founder): About Updone and its founder
+- [Portfolio](https://ceo.updone.in/): Projects, skills, experience, education and certifications of Sakthivel S
+- [Founder page](https://ceo.updone.in/#/founder): About Updone and its founder
 - [Updone](https://updone.in): Official website of Updone

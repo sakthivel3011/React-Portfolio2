@@ -68,7 +68,7 @@ Allow: /
 User-agent: xAI-Bot
 Allow: /
 
-Sitemap: https://sakthivel-portfolio.vercel.app/sitemap.xml
+Sitemap: https://ceo.updone.in/sitemap.xml
 
 # AI-readable site summary
-# llms.txt: https://sakthivel-portfolio.vercel.app/llms.txt
+# llms.txt: https://ceo.updone.in/llms.txt
