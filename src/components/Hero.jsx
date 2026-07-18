@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { AnimatePresence, motion, useScroll, useTransform } from 'framer-motion'
 import HeroCanvas from './HeroCanvas.jsx'
 import useTilt from '../hooks/useTilt.js'
-import portrait from '../assets/sakthi.png'
+import portrait from '../assets/sakthi1.png'
 import resumePdf from '../assets/Sakthivel-Resume.pdf'
 
 const BADGES = ['React.js', 'Node.js', 'Firebase', 'PostgreSQL', 'SaaS Development']
