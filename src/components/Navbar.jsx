@@ -9,7 +9,7 @@ const LINKS = [
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Company', href: '#/founder' },
+  { label: 'Company', href: '/founder' },
 ]
 
 const DESKTOP_LINKS = LINKS.filter((l) => !l.mobileOnly)

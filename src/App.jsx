@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
 import Lenis from 'lenis'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
@@ -12,28 +12,60 @@ const Certifications = lazy(() => import('./components/Certifications.jsx'))
 const Contact = lazy(() => import('./components/Contact.jsx'))
 const Footer = lazy(() => import('./components/Footer.jsx'))
 const Founder = lazy(() => import('./components/Founder.jsx'))
+const AllProjects = lazy(() => import('./components/AllProjects.jsx'))
 
 export default function App() {
-  const [route, setRoute] = useState(window.location.hash)
-  const isFounder = route.startsWith('#/founder')
+  const [path, setPath] = useState(window.location.pathname)
+  const isFounder = path === '/founder'
+  const isAllProjects = path === '/projects'
+  const isSubPage = isFounder || isAllProjects
 
   useEffect(() => {
-    const onHash = () => setRoute(window.location.hash)
-    window.addEventListener('hashchange', onHash)
-    return () => window.removeEventListener('hashchange', onHash)
+    const onPop = () => setPath(window.location.pathname)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
   }, [])
+
+  // Intercept clicks on internal path links (e.g. /founder, /projects, /) and
+  // navigate via the History API instead of a full page reload.
+  const navigate = useCallback((href) => {
+    const url = new URL(href, window.location.origin)
+    const pathChanged = url.pathname !== window.location.pathname
+    window.history.pushState({}, '', url.pathname + url.hash)
+    if (pathChanged) setPath(url.pathname)
+    requestAnimationFrame(() => {
+      if (url.hash) {
+        document.querySelector(url.hash)?.scrollIntoView()
+      } else {
+        window.scrollTo(0, 0)
+      }
+    })
+  }, [])
+
+  useEffect(() => {
+    const onClick = (e) => {
+      const anchor = e.target.closest('a[href]')
+      if (!anchor || anchor.target === '_blank' || anchor.hasAttribute('download')) return
+      const href = anchor.getAttribute('href')
+      if (!href || !href.startsWith('/') || href.startsWith('//')) return
+      e.preventDefault()
+      navigate(href)
+    }
+    document.addEventListener('click', onClick)
+    return () => document.removeEventListener('click', onClick)
+  }, [navigate])
 
   // When switching pages, land at the top (or at the section the link targeted)
   useEffect(() => {
-    if (isFounder) {
+    if (isSubPage) {
       window.scrollTo(0, 0)
       return
     }
     const id = window.location.hash
-    if (id && id.length > 1 && !id.startsWith('#/')) {
+    if (id && id.length > 1) {
       requestAnimationFrame(() => document.querySelector(id)?.scrollIntoView())
     }
-  }, [isFounder])
+  }, [isSubPage])
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
@@ -56,7 +88,7 @@ export default function App() {
       const anchor = e.target.closest('a[href^="#"]')
       if (!anchor) return
       const id = anchor.getAttribute('href')
-      if (id.length < 2 || id.startsWith('#/')) return
+      if (id.length < 2) return
       const el = document.querySelector(id)
       if (!el) return
       e.preventDefault()
@@ -76,6 +108,10 @@ export default function App() {
       {isFounder ? (
         <Suspense fallback={<div className="min-h-screen" />}>
           <Founder />
+        </Suspense>
+      ) : isAllProjects ? (
+        <Suspense fallback={<div className="min-h-screen" />}>
+          <AllProjects />
         </Suspense>
       ) : (
         <>

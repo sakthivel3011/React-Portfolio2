@@ -91,7 +91,7 @@ export default function Founder() {
       <header className="fixed inset-x-0 top-0 z-50">
         <nav className="glass-strong mx-auto mt-0 flex h-16 max-w-6xl items-center justify-between gap-2 px-4 xs:px-5 sm:mx-4 sm:mt-3 sm:rounded-2xl sm:px-8 lg:mx-auto">
           <a
-            href="#home"
+            href="/"
             className="inline-flex items-center gap-2 text-sm font-semibold text-white/70 transition-colors hover:text-accent"
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">

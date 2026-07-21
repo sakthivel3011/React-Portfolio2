@@ -2,7 +2,7 @@ import Reveal, { ParallaxShell, SectionHeader } from './Reveal.jsx'
 import useTilt from '../hooks/useTilt.js'
 import { projects } from '../data/projects.js'
 
-function ProjectCard({ project, featured }) {
+export function ProjectCard({ project, featured }) {
   const tilt = useTilt(featured ? 3 : 5)
   const shownModules = project.modules.slice(0, featured ? 8 : 5)
   const hiddenCount = project.modules.length - shownModules.length
@@ -93,6 +93,8 @@ function ProjectCard({ project, featured }) {
 }
 
 export default function Projects() {
+  const preview = projects.slice(0, 3)
+
   return (
     <section id="projects" className="relative py-24 sm:py-32">
       <div
@@ -107,7 +109,7 @@ export default function Projects() {
         />
 
         <div className="grid gap-5 md:grid-cols-2 lg:gap-6">
-          {projects.map((p, i) => (
+          {preview.map((p, i) => (
             <Reveal
               key={p.slug}
               delay={0.05 * (i % 2)}
@@ -117,6 +119,15 @@ export default function Projects() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.1} className="mt-10 flex justify-center sm:mt-12">
+          <a href="/projects" className="btn-ghost">
+            View More Projects
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14m0 0l-6-6m6 6l-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        </Reveal>
       </ParallaxShell>
     </section>
   )
